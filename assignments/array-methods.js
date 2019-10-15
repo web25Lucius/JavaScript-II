@@ -64,8 +64,9 @@ const runners = [
 // )
 // console.log(fullNames);
 
-let fullNames = runners.forEach(function(items){
-    return (`${items.first_name} ${items.last_name}`); 
+let fullNames = []; 
+    runners.forEach(function(items){
+    return fullNames.push(items.first_name +' '+items.last_name); 
 }
 );  
 
